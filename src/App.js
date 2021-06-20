@@ -1,9 +1,11 @@
 import React from "react";
+//IMPORT PAGES
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
     <div className="App">
-      <h1>DAVID ANDERSON</h1>
+      <AboutUs />
     </div>
   );
 }
