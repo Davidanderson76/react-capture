@@ -68,16 +68,22 @@ const Services = styled(About)`
 `;
 
 const Cards = styled.div`
-display:flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const Card = styled.div`
-flex-basis: 20rem;
-.icon{
-  display:flex;
-  align-items: center;
-}
+  flex-basis: 20rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-left: 1rem;
+      background: white;
+      color: black;
+      padding: 1rem;
+    }
+  }
 `;
 
 export default ServicesSection;
