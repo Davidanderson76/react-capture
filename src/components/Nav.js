@@ -7,12 +7,12 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link id="logo" to="/">
-          Capture
+          ~ DA ~
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About</Link>
+          <Link to="/">1. About Me</Link>
         </li>
         <li>
           <Link to="/work">2. Gallery</Link>
