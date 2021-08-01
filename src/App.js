@@ -8,18 +8,18 @@ import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import MovieDetail from "./pages/MovieDetail";
 //ROUTER
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+//ANIMATION
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
-
       <Nav />
-      {/* <AnimatePresence exitBeforeEnter> */}
-        <Switch 
-        // location={location} key={location.pathname}
-        >
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <AboutUs />
           </Route>
@@ -33,7 +33,7 @@ function App() {
             <ContactUs />
           </Route>
         </Switch>
-      {/* </AnimatePresence> */}
+      </AnimatePresence>
     </div>
   );
 }
