@@ -61,7 +61,7 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <h2>PokeMemory</h2>
+        <h2>PokéMemory</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/Pokememory">
           <img src={pokememory} alt="pokememory app" />
