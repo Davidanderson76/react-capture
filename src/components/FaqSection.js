@@ -104,17 +104,6 @@ const FaqSection = () => {
                   </a>
                 </li>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                {/* <li className="links">
-                <a
-                  href="https://www.linkedin.com/in/davidanderson76/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <MdEmail icon={MdEmail} />
-                  &nbsp; Email
-                </a>
-              </li>
-              &nbsp;&nbsp;&nbsp;&nbsp; */}
               </ul>
             </div>
           </Toggle>

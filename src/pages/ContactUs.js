@@ -103,7 +103,7 @@ const Hide = styled.div`
   }
   .connection {
     font-size: x-large;
-    color: #727171;
+    color: whitesmoke;
   }
 `;
 

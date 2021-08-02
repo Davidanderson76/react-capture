@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //IMAGES
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+// import athlete from "../img/athlete-small.png";
+// import theracer from "../img/theracer-small.png";
+// import goodtimes from "../img/goodtimes-small.png";
+import audioPlayer2 from "../img/audioPlayer2.png";
+import chategories from "../img/chategories.png";
+import pokememory from "../img/pokememory.png";
 //ANIMATIONS
 import { motion } from "framer-motion";
 import {
@@ -29,32 +32,39 @@ const OurWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
+
       <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.h2 variants={fade}>React Audio Player</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-athlete">
+        <Link to="/work/audio-player">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            <motion.img
+              variants={photoAnim}
+              src={audioPlayer2}
+              alt="audio player app"
+            />
           </Hide>
         </Link>
       </Movie>
+
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>The Racer</h2>
+        <h2>Chategories</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
+        <Link to="/work/chategories">
+          <img src={chategories} alt="chategories app" />
         </Link>
       </Movie>
+
       <Movie
         ref={element2}
         variants={fade}
         animate={controls2}
         initial="hidden"
       >
-        <h2>Good Times</h2>
+        <h2>PokeMemory</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes" />
+        <Link to="/work/Pokememory">
+          <img src={pokememory} alt="pokememory app" />
         </Link>
       </Movie>
       <ScrollTop />
