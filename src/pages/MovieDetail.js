@@ -29,6 +29,7 @@ const MovieDetail = () => {
         >
           <HeadLine>
             <h2>{movie.title}</h2>
+            &nbsp;
             <img src={movie.mainImg} alt="movie" />
           </HeadLine>
           <Awards>
@@ -75,13 +76,17 @@ const Awards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1300px) {
+    display: block;
+    margin: 2rem 2rem;
+  }
 `;
 const AwardStyle = styled.div`
   color: #1b1b1b;
   padding: 5rem;
   h3 {
     color: #313131;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .line {
     width: 100%;

@@ -46,13 +46,13 @@ const AboutSection = () => {
           </Hide> */}
         </motion.div>
         <motion.p variants={fade}>
-          Full stack software engineer with over a decade of management
-          experience, strong communicator and coordinator, while thriving in a
-          productive team environment. Certificate earned in Full Stack Web
-          Development from the University of Minnesota Coding Boot Camp.
-          Innovative engineer who is passionate about helping others and
-          developing excellent apps with a focus on mobile-first design and
-          development. Strengths in creativity, teamwork, and building projects
+          My name is David Anderson and I am a full stack software engineer
+          who is passionate about helping others and
+          developing applications with a focus on mobile-first design and
+          development. 
+          <br></br>
+          <br></br>
+          Strengths in creativity, teamwork, and building projects
           from ideation to execution.
         </motion.p>
         <Link to="/contact">
@@ -67,6 +67,7 @@ const AboutSection = () => {
           </motion.button>
         </Link>
       </Description>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <Image>
         <motion.img variants={photoAnim} src={me} alt="David Anderson" />
       </Image>

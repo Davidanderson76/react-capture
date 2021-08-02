@@ -1,7 +1,7 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 300,
+    y: -300,
   },
   show: {
     opacity: 1,
@@ -69,10 +69,9 @@ export const sliderContainer = {
 };
 
 export const scrollReveal = {
-  hidden: { opacity: 0, scale: 1.2, transition: { duration: 0.5 } },
+  hidden: { width: "0%" },
   show: {
-    opacity: 1,
-    scale: 1,
+    width: "100%",
     transition: {
       duration: 0.5,
     },
