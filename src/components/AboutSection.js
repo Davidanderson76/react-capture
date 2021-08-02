@@ -57,7 +57,7 @@ const AboutSection = () => {
         </motion.p>
         <Link to="/contact">
           <motion.button variants={fade} whileHover={{ scale: 1, rotate: 360 }}>
-            Contact Me
+            Contact
           </motion.button>
         </Link>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
