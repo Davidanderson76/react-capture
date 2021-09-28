@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../img/me1.PNG";
+import me from "../img/me2.PNG";
 import { Link } from "react-router-dom";
 
 //STYLED
@@ -28,8 +28,7 @@ const AboutSection = () => {
           variants={container}
           initial="hidden"
           animate="show"
-          className="title"
-        >
+          className="title">
           <Hide>
             <h2>Let's</h2>
           </Hide>
@@ -46,14 +45,13 @@ const AboutSection = () => {
           </Hide> */}
         </motion.div>
         <motion.p variants={fade}>
-          My name is David Anderson and I am a full stack software engineer
-          who is passionate about helping others and
-          developing applications with a focus on mobile-first design and
-          development. 
+          My name is David Anderson and I am a full stack software engineer who
+          is passionate about helping others and developing applications with a
+          focus on mobile-first design and development.
           <br></br>
           <br></br>
-          Strengths in creativity, teamwork, and building projects
-          from ideation to execution.
+          Strengths in creativity, teamwork, and building projects from ideation
+          to execution.
         </motion.p>
         <Link to="/contact">
           <motion.button variants={fade} whileHover={{ scale: 1, rotate: 360 }}>
